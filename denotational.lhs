@@ -1,15 +1,13 @@
-Homework 7
+Denotational Semantics
 =======
-Brady Ouren
--------
 
 > module Denotational where
 
 > import Data.Map (fromList, toList, insert)
 
-State is given this way based on the specification of this homework problem. In
-my opinion it should be a Map String -> Integer (I do use it this way at one
-point)
+State is given the following way based on the specification of this homework
+problem. In my opinion it should be a Map String -> Integer (I do use it this
+way at one point)
 
 > type State = [ (String, Integer) ]
 
