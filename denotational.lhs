@@ -68,7 +68,7 @@ use it because it makes other functions later on unnecessarily complicated.
 > update :: String -> Integer -> State -> State
 > update var x state = (var,x):state
 
-Instead I defined 'update'` which uses State as it should be (Data.Map)
+Instead I defined `update'` which uses State as it should be (Data.Map)
 
 > update' :: String -> Integer -> State -> State
 > update' var x state = toList $ insert var x $ fromList state
@@ -82,7 +82,6 @@ Given a statement and a state, this “executes” the statement to produce an u
 >   let e' = eval e s
 >   in
 >     update' str e' s
-
 > exec (IfThen e stmt) s =
 >   let e' = eval e s
 >   in
@@ -115,8 +114,8 @@ For example, this pseudocode:
     i = 0
     z = 1
     while i < y
-    z = z * x
-    i = i + 1
+      z = z * x
+      i = i + 1
 
 would be represented by the AST:
 
